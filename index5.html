@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+
+    <title>Document</title>
+</head>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-danger" >
+        
+      <a class="navbar-brand text-capitalize display-5" href="#home">crust pizza</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="btn btn-outline-dark button_nav"  href="#home">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark button_nav"  href="#carouselExampleCaptions">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark button_nav"  href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-dark button_nav" href="#contact">Contact</a>
+                
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <header class="bgimg w3-display-container w3-grayscale-min header" id="home">
+    <div class="text-main">
+      <div class="w3-display-middle w3-center">
+        <span class="display-1 name-main" style="font-size:150px">Crust<br>Pizza</span>
+        
+      </div>
+      
+      <div class="div-hour-main">
+        <span class="w3-tag w3-xlarge hour-main">Now OPEN!</span>
+      </div>
+    </div>
+    <img src="Imagenes/pizza_fondo.jpeg" class="img-fluid imagen_principal" alt="...">
+    </header>
+    
+
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <img src="Imagenes/pizza.jpg" class="d-block w-100" alt="...">
+
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container-fluid menu-title">
+                
+                <p class="display-4"> Menu Pizza</p>
+                </div>
+                <div class="container-fluid d-flex flex-row bd-highlight mb-3" id="menu">
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/pizza-margarita.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title h3"><b>Margherita</b></h5>
+                    <p class="card-text p">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <a href="#" class="btn btn-outline-dark button-menu" data-toggle="modal" data-target="#exampleModal">Buy for $12.50!</a>                                   
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/pizza-formaggio.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title h3"><b>Formaggio</b></h5>
+                    <p class="card-text p">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    <a href="#" class="btn btn-outline-dark button-menu"  data-toggle="modal" data-target="#exampleModal">Buy for $15.50!</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/pizza-meat.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title h3"><b>Meat Town</b></h5>
+                    <p class="card-text p">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                    <a href="#" class="btn btn-outline-dark button-menu"  data-toggle="modal" data-target="#exampleModal">Buy for $20.00!</a>                                  
+                  </div>
+                </div>
+                </div>              
+              </div>
+             
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/pasta.jpg" class="d-block w-100" alt="...">
+              
+              <div class="carousel-caption d-none d-md-block">
+                <div class="container-fluid menu-title">
+                
+                <p class="display-4">Menu Pasta</p>
+                </div>
+                <div class="container-fluid d-flex flex-row bd-highlight mb-3" id="menu">
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/pasta-lasagna.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title h3"><b>Lasagna</b></h5>
+                    <p class="card-text p">Special sauce, mozzarella, parmesan, ground beef</p>
+                    <a href="#" class="btn btn-outline-dark button-menu" data-toggle="modal" data-target="#exampleModal">Buy for $13.50!</a>                                   
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/pasta-ravioli.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title h3"><b>Ravioli</b></h5>
+                    <p class="card-text p">Ravioli filled with cheese</p>
+                    <a href="#" class="btn btn-outline-dark button-menu"  data-toggle="modal" data-target="#exampleModal">Buy for $14.50!</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/pasta-spaghetti.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title h3"><b>Spaghetti</b></h5>
+                    <p class="card-text p">Fresh tomatoes, onions, ground beef</p>
+                    <a href="#" class="btn btn-outline-dark button-menu"  data-toggle="modal" data-target="#exampleModal">Buy for $11.00!</a>                                  
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="Imagenes/pasta-seapasta.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title h3"><b>Seafood</b></h5>
+                    <p class="card-text p">Fresh tomatoes, onions, ground beef</p>
+                    <a href="#" class="btn btn-outline-dark button-menu"  data-toggle="modal" data-target="#exampleModal">Buy for $11.00!</a>                                  
+                  </div>
+                </div>
+                </div>              
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/bruschetta.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                
+                
+                  <div class="container-fluid menu-title">
+                  
+                  <p class="display-4">Menu Starters</p>
+                  </div>
+                  <div class="container-fluid d-flex flex-row bd-highlight mb-3" id="menu">
+                  <div class="card" style="width: 18rem;">
+                    <img src="Imagenes/starter-soup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title h3"><b>Today's soup</b></h5>
+                      <p class="card-text p">Ask the waiter</p>
+                      <a href="#" class="btn btn-outline-dark button-menu" data-toggle="modal" data-target="#exampleModal">Buy for $5.50!</a>                                   
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="Imagenes/starter-bruschetta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title h3"><b>Bruschetta</b></h5>
+                      <p class="card-text p">Bread with pesto, tomatoes, onion, garlic</p>
+                      <a href="#" class="btn btn-outline-dark button-menu"  data-toggle="modal" data-target="#exampleModal">Buy for $8.50!</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="Imagenes/starter-garlic-bread.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title h3"><b>Garlic bread</b></h5>
+                      <p class="card-text p">Grilled ciabatta, garlic butter, onions</p>
+                      <a href="#" class="btn btn-outline-dark button-menu"  data-toggle="modal" data-target="#exampleModal">Buy for $9.50!</a>                                  
+                    </div>
+                  </div>
+                  </div>              
+                
+
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+
+    <!-- About Container -->
+    <div class="container-fluid" id="about" style="background-color: black; color: white;">
+      <div class="w3-content container-fluid">
+        <h2 class="w3-center w3-jumbo" style="margin-bottom:10px;margin-top:20px"><b> About</b></h2>
+
+        <div class="container-fluid about-container">
+        <div class="container-sm about-content bg-danger">
+          <h3>The pizza shop</h3>
+        <p class="text-justify">Expand your culinary horizons! Discover a new favorite by trying the top pizzas.	
+          <br>
+          Partnered with Slice since 1992, this restaurant has been a staple of the community for years. Try the food and see why they've remained popular with locals. Take home your pizza with curbside pickup. It's never been easier to grab a pizza whenever you feel the urge. You can make your meal easier on your wallet with deals from Crust Pizza. Try something delicious at an affordable price!
+        </p>
+        </div>
+        
+        <div class="container-sm about-content bg-danger align-self-end">
+        <h3>The Chef?</h3>
+        <p> <img src="Imagenes/maestro pizzero.jpg" style="width:150px;object-fit: cover; border-radius: 5px;border: 2px solid black; margin-right: 2em;" class="w3-circle w3-right" alt="Chef">Mr. Italiano himself</p>
+        </div>
+        <div class="container-sm about-content bg-danger align-self-end" style="text-align: right;">
+        <h3>We are proud of our interiors.</h3>
+        </div>
+        </div>
+
+
+        <img src="Imagenes/shop.jpg" class="w3-margin-top w3-margin-bottom" alt="Restaurant" id="shop">
+
+
+        <h2 style="margin-bottom:10px;margin-top:20px"><b>Opening Hours</b></h2>
+        
+        
+        <div class="table-responsive-sm">
+        <table class="table" style="color: white;">
+          <thead>
+            <tr class="text-center">
+              <th scope="col">Mon & Tue</th>
+              <th scope="col">Wednesday</th>
+              <th scope="col">Thursday</th>
+              <th scope="col">Friday</th>
+              <th scope="col">Saturday</th>
+              <th scope="col">Sunday</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="text-center">
+              
+              <td>CLOSED</td>
+              <td>10.00 hs - 24.00 hs</td>
+              <td>10:00 hs - 24:00 hs</td>
+              <td>10:00 hs - 12:00 hs</td>
+              <td>10:00 hs - 23:00 hs</td>
+              <td>CLOSED</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge bg-danger" id="contact">
+      <h2 style="margin:20px"><b>Contact</b></h2>
+      <div class="container-fluid contact-div">
+        <div class="container-fluid contact-div-1">
+          <img src="Imagenes/isometric pizza1.jpg" class="w3-margin-top w3-margin-bottom"  alt="location" id="map">
+
+        </div>
+        <div class="container-fluid contact-div-2">
+          <div class="container-fluid contact-div-3">
+            
+            <p>Find us at some address at some place or call us at 05050515-122330</p>
+            <p class="h5"><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            </div>
+            <div class="container-fluid contact-div-4">
+            <p class="h5"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputText" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputName"required>
+                <div class="invalid-feedback">
+                  Please choose name.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPeople" class="form-label">How many people? (min:1 person - max: 5 persons)</label>
+                <input type="number" class="form-control" id="exampleInputPeople" value="1" min="1" max="5"required>
+                <div class="invalid-feedback">
+                  Please choose.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputDate" class="form-label">When?</label>
+                <input type="datetime-local" class="form-control" id="exampleInputDate" required name="date" value="2022-04-04T20:00"required>
+              </div>
+              <div class="form-floating">
+                <label for="floatingTextarea2">Leave a comment here</label>
+                <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+              <div class="form-floating">
+              <button type="submit" class="btn btn-outline-dark button_nav" style="margin-top: 25px;" data-toggle="modal" data-target="#ModalMailSend">Sent!</button>
+              </div>
+
+            </form>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">D'oh!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            We dont have stock at the moment. Sorry!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalMailSend" tabindex="-1"  aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Crust pizza</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Your reservation has been sent
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
